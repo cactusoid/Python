@@ -26,6 +26,13 @@ def f3(l):
     def get_mult(x):
         if isinstance(x, int):
             return x * 2
-    return [get_mult(i) for i in l]
+    return [get_mult(i) for i in l if get_mult(i)]
 
 print(f3(l))
+
+def f4(l):
+    def get_mult(x):
+        return x * 2
+    return list(map(get_mult, l))
+
+print(f4(l))
