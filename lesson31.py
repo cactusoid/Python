@@ -6,7 +6,7 @@
 Если игрок угадал число, тогда программа благодарит за игру и сообщает количество попыток, за которое было угадано
 число.
 '''
-import random
+# import random
 
 # nums = random.randint(1, 100)
 # i = 1
@@ -48,12 +48,12 @@ from datetime import date, datetime, timedelta
 import locale
 
 # date
-# today = date.today()
-# print(today)  # 2020-08-14
-# print(today.day)  # 14
-# print(today.month)  # 8
-# print(today.year)  # 2020
-# print(today.weekday())  # 4, пятница 4 день, так как понедельник нулевой день.
+today = date.today()
+print(today)  # 2020-08-14
+print(today.day)  # 14
+print(today.month)  # 8
+print(today.year)  # 2020
+print(today.weekday())  # 4, пятница 4 день, так как понедельник нулевой день.
 
 # datetime
 # now = datetime.now()
@@ -72,7 +72,7 @@ import locale
 # days = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс']
 # print(days[now.weekday()])  # пт
 
-# locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
+locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
 # locale.setlocale(locale.LC_ALL, 'ru_RU')
 # now = datetime.now()
 # print(now)
