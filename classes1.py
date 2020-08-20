@@ -1,8 +1,8 @@
 class Person:
 
-    def __init__(self, name):
+    def __init__(self, name, age):
         self.name = name
-        self.__age = 20
+        self.__age = age
 
     def print_info(self):
         print(f'Name: {self.name}, Age: {self.__age}')
@@ -26,3 +26,9 @@ class Person:
             self.__age = value
         else:
             print('Wrong age')
+
+class Employee(Person):
+    company = 'Google'
+
+    def more_info(self):
+        print(f'{self.name} works in {self.company}')
